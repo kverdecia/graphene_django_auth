@@ -13,6 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'pyjwt',
+    'graphene',
     'graphene-django',
 ]
 
@@ -27,7 +28,7 @@ test_requirements = [
 setup(
     name='graphene_django_auth',
     version='0.1.0',
-    description="An implementation of a graphql schema for jwt authentication.",
+    description="Implementation of a graphql schema for jwt authentication.",
     long_description=readme + '\n\n' + history,
     author="Karel Antonio Verdecia Ortiz",
     author_email='kverdecia@gmail.com',

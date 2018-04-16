@@ -7,7 +7,11 @@ from django.contrib.auth import authenticate, get_user_model
 
 
 def _get_user(request):
+    if request.user and request.user.is_authenticated:
+        return request.user
     authorization = request.META.get('HTTP_AUTHORIZATION', '')
+    if not authorization:
+        authorization = request.META.get('HTTP_PRUEBA', '')
     if not authorization.startswith('Bearer '):
         return None
     token = authorization.split()[1]

@@ -27,7 +27,7 @@ test_requirements = [
 
 setup(
     name='graphene_django_auth',
-    version='0.1.0',
+    version='0.1.1',
     description="Implementation of a graphql schema for jwt authentication.",
     long_description=readme + '\n\n' + history,
     author="Karel Antonio Verdecia Ortiz",
